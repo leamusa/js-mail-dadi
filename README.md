@@ -4,8 +4,9 @@
 
 # Mail:
 
-1.  Ask to the user the e-mail adress, check if the user is inside of a list of whome can acced,
-2.  Print an appropriate msg on the exit of the controle.
+1.  Ask to the user the e-mail adress,
+2.  check if the user is inside of a list of whome can acced,(already registrated)
+3.  Print an appropriate msg on the exit of the controle.
 
 # Dice Game:
 
@@ -21,3 +22,25 @@
 # Bonus
 
 1. Use an input and a button to insert the email and then we show the results in page
+
+# Tools
+
+1. Verify if the email is present inside of exisent **list** (for opening a cicle):
+   var recorded = [...]: (Declaration of an Array) containing registered email addresses.
+
+2. var authorized = false;:
+   Boolean variable **initialization**.
+
+3. var mail_user = prompt("Enter your email?"):
+   **Istruction** for the user to enter his email address through a prompt box and stores the value in the (mail_user) variable.
+4. Start a Loop through for and the array already registered to check if the entered email address is present among the registered ones.
+
+5. var recorded = recorded[i];
+   Memorize the current email address during loop iteration in the recorded variable.
+
+6. Compare the entered email address with the currently **iterated** one. If there is a match, set it to true and exit the loop.
+
+7. if(authorized) { ... } else { ... }:
+   Check if the user is authorized. If yes, it shows a welcome message in the HTML element with the id "output"; otherwise, it shows a message that requires registration.
+
+8. Use document.getElementById("output"). innerhtml = to updates the content of the HTML element with id "output" with the appropriate message.
