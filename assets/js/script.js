@@ -6,7 +6,7 @@ var register = [
   "bibi@gmail.com",
   "martina@gmail.com",
 ];
-var authorized = false; // Set to false because it will change after*
+var authorized = false; // will change after with registered users*
 
 // Asking email to user
 var user_mail = prompt("Enter your email?");
