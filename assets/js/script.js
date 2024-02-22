@@ -12,7 +12,7 @@ var authorized = false; // Set to false because it will change after*
 var user_mail = prompt("Enter your email?");
 // verify if the email is already registered
 for (var i = 0; i < register.length; i++) {
-  // loop
+  // starting the loop
   var registered = register[i]; // Array
   if (user_mail === registered) {
     // user's input

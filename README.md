@@ -5,7 +5,7 @@
 # Mail:
 
 1.  Ask to the user the e-mail adress,
-2.  check if the user is inside of a list of whome can acced,(already registrated)
+2.  check if the user is inside of a list of whome can acced,(already registered)
 3.  Print an appropriate msg on the exit of the controle.
 
 # Dice Game:
