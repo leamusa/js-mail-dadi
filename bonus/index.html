@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bonus</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome <span id="user"></span> to the Dice Game!</h1>
+
+      <!-- Input for the email -->
+      <label for="email">Enter your Name: </label>
+      <input type="name" id="name" placeholder="Your name" />
+      <button onclick="startGame()">Start Game</button>
+
+      <!-- Display player's dice roll result -->
+      <p>Your roll: <span id="rolling-user"></span></p>
+
+      <!-- Display computer's dice roll result -->
+      <p>Computer's roll: <span id="rolling-pc"></span></p>
+
+      <!-- Display the game result -->
+      <p id="result"></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
