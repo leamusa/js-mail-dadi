@@ -31,3 +31,5 @@ if (authorized) {
     "IMPOSSIBLE TO ACCESS IF NOT REGISTERED!" +
     "<br>Please register to access the contents of the page";
 }
+// End of 1 ex
+//Second ex: Dice Game
