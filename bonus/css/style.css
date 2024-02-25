@@ -22,11 +22,11 @@ h1 {
   margin-bottom: 20px;
   color: #e5e2ec;
 }
-/*label*/
+
 label {
   color: #fff;
 }
-/* input */
+
 input {
   padding: 10px;
   border: 1px solid #431198;
@@ -35,7 +35,6 @@ input {
   margin-bottom: 10px;
 }
 
-/* Btn */
 button {
   padding: 10px 20px;
   background-color: #b539be;
@@ -44,7 +43,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  /*Compare name in p after push*/
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -56,6 +54,10 @@ p {
 .dice {
   font-size: 3rem; /* Regola la dimensione del dado */
   line-height: 1.5; /* Regola l'altezza della linea per centrare il dado */
+  transform-origin: center;
+}
+
+.roll {
   animation: rollDice 2s ease-out;
 }
 
@@ -75,4 +77,8 @@ p {
   100% {
     transform: rotate(0deg);
   }
+}
+.userClass {
+  color: #ff0000;
+  font-weight: bold;
 }

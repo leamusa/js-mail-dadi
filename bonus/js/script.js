@@ -1,10 +1,12 @@
 // Function to start the game
 function startGame() {
-  // Get the name input value
-  var name = document.getElementById("name").value;
+  // Get the dice element
+  var diceElement = document.getElementById("rolling-dice");
 
-  // Display the name in the welcome message
-  document.getElementById("user").innerHTML = name;
+  // Display the name in the welcome message with the userClass
+  var userSpan = document.getElementById("user");
+  userSpan.innerHTML = name;
+  userSpan.classList.add("userClass");
 
   // Generate a random number for the player
   var numRandomUser = Math.floor(Math.random() * 6) + 1;
@@ -27,4 +29,12 @@ function startGame() {
 
   // Display the game result
   document.getElementById("result").innerHTML = gameResult;
+
+  // Add the roll class to trigger the dice animation
+  diceElement.classList.add("roll");
+
+  // Remove the roll class after the animation ends
+  diceElement.addEventListener("animationend", function () {
+    diceElement.classList.remove("roll");
+  });
 }
