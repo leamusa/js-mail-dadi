@@ -61,23 +61,6 @@ p {
   animation: rollDice 2s ease-out;
 }
 
-@keyframes rollDice {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
-  75% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .userClass {
   color: rgb(179, 18, 117);
   font-weight: bold;
