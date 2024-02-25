@@ -1,4 +1,5 @@
-// VARIABLE
+// // VARIABLE
+/*
 var register = [
   "gio90@gmail.com",
   "stefy@gmail.com",
@@ -7,7 +8,7 @@ var register = [
   "martina@gmail.com",
 ];
 var authorized = false; // will change after with registered users*
-
+//
 // Asking email to user
 var user_mail = prompt("Enter your email?");
 // verify if the email is already registered
@@ -17,7 +18,7 @@ for (var i = 0; i < register.length; i++) {
   if (user_mail === registered) {
     // user's input
     authorized = true;
-    break; // stopping the loop with true*
+    break; // stopping the loop with break*
   }
 }
 
@@ -31,5 +32,3 @@ if (authorized) {
     "IMPOSSIBLE TO ACCESS IF NOT REGISTERED!" +
     "<br>Please register to access the contents of the page";
 }
-// End of 1 ex
-//Second ex: Dice Game

@@ -44,3 +44,9 @@
    Check if the user is authorized. If yes, it shows a welcome message in the HTML element with the id "output"; otherwise, it shows a message that requires registration.
 
 8. Use document.getElementById("output"). innerhtml = to updates the content of the HTML element with id "output" with the appropriate message.
+
+# tools dice game
+
+1. asking to the player to put the name
+2. generating a random number for user and then for pc
+3. declaring who is the winner based to the higher point
