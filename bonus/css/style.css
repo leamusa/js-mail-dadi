@@ -22,12 +22,9 @@ h1 {
   margin-bottom: 20px;
   color: #e5e2ec;
 }
-
-label,
-input {
-  margin-bottom: 10px;
+/*label*/
+label {
   color: #fff;
-  margin-top: 10px;
 }
 /* input */
 input {
@@ -47,10 +44,22 @@ button {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+  /*Compare name in p after push*/
   transition: background-color 0.3s ease-in-out;
 }
 
 p {
-  margin: 10px 0;
+  margin: 10px;
   color: #fff;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #431198;
+  border-radius: 8px;
+  margin: 10px auto;
+  display: inline-block;
+  position: relative;
 }

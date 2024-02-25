@@ -11,9 +11,16 @@
       <h1>Welcome <span id="user"></span> to the Dice Game!</h1>
 
       <!-- Input for the email -->
-      <label for="email">Enter your Name: </label>
-      <input type="name" id="name" placeholder="Your name" />
+      <span id="player"></span>
+      <label for="name">Enter your Name: </label>
+      <input
+        type="text"
+        id="player"
+        placeholder="Your name"
+        oninput="updateName(this.value)"
+      />
       <button onclick="startGame()">Start Game</button>
+      <p>Your roll: <span id="rolling-player"></span></p>
 
       <!-- Display player's dice roll result -->
       <p>Your roll: <span id="rolling-user"></span></p>
@@ -23,6 +30,9 @@
 
       <!-- Display the game result -->
       <p id="result"></p>
+
+      <!-- Animated dice -->
+      <div class="dice" id="rolling-dice"></div>
     </div>
 
     <script src="./js/script.js"></script>
