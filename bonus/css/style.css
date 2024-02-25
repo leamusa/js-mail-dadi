@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: monserrat;
+  font-family: "Dancing Script", cursive;
 }
 
 .container {
@@ -52,8 +52,8 @@ p {
 }
 
 .dice {
-  font-size: 3rem; /* Regola la dimensione del dado */
-  line-height: 1.5; /* Regola l'altezza della linea per centrare il dado */
+  font-size: 3rem; /*  dimens */
+  line-height: 1.5; /*height of the line to centrate il dado */
   transform-origin: center;
 }
 
@@ -79,6 +79,6 @@ p {
   }
 }
 .userClass {
-  color: #e185b9;
+  color: rgb(179, 18, 117);
   font-weight: bold;
 }
