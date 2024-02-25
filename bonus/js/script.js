@@ -39,11 +39,11 @@ function startGame() {
   // Display the game result
   document.getElementById("result").innerHTML = gameResult;
 
-  // Add the roll class to trigger the dice animation
-  diceElement.classList.add("roll");
+  // Add the roll-animate class to actove the dice rotation
+  diceElement.classList.add("roll-animate");
 
-  // Remove the roll class after the animation ends
-  diceElement.addEventListener("animationend", function () {
-    diceElement.classList.remove("roll");
-  });
+  // Remove the roll-animate class after the animation ends
+  setTimeout(() => {
+    diceElement.classList.remove("roll-animate");
+  }, 1000); // Tempo della transizione
 }
