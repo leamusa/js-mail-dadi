@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: monserrat;
 }
 
 .container {
@@ -79,6 +79,6 @@ p {
   }
 }
 .userClass {
-  color: #ff0000;
+  color: #e185b9;
   font-weight: bold;
 }

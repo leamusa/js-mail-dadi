@@ -3,10 +3,19 @@ function startGame() {
   // Get the dice element
   var diceElement = document.getElementById("rolling-dice");
 
+  // Get the user's name from the input field
+  var name = document.getElementById("name").value;
+
   // Display the name in the welcome message with the userClass
   var userSpan = document.getElementById("user");
-  userSpan.innerHTML = name;
-  userSpan.classList.add("userClass");
+
+  if (userSpan) {
+    userSpan.innerHTML = name;
+    userSpan.classList.add("userClass");
+  } else {
+    console.error("Element with id 'user' not found.");
+    return; // Exit the function if the element is not found
+  }
 
   // Generate a random number for the player
   var numRandomUser = Math.floor(Math.random() * 6) + 1;
