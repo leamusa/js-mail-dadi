@@ -1,49 +1,26 @@
-// Function to start the game
-function startGame() {
-  // Get the dice element
-  var diceElement = document.getElementById("rolling-dice");
+// Function to get a random number for the given sides of the die
+function getRandomNumber(sides) {
+  return Math.floor(Math.random() * sides) + 1;
+}
 
-  // Get the user's name from the input field
-  var name = document.getElementById("name").value;
+// Number of sides on the die
+var sides = 6;
 
-  // Display the name in the welcome message with the userClass
-  var userSpan = document.getElementById("user");
+// Generate random numbers for both player and computer
+var numRandomUser, numRandomPc;
 
-  if (userSpan) {
-    userSpan.innerHTML = name;
-    userSpan.classList.add("userClass");
+for (var i = 0; i < 2; i++) {
+  // Generate a random number
+  var randomNumber = getRandomNumber(sides);
+
+  // Assign the generated number to the appropriate variable and update the HTML
+  if (i === 0) {
+    numRandomUser = randomNumber;
+    console.log("Player's Random Number:", numRandomUser);
+    document.getElementById("rolling-user").innerHTML = numRandomUser;
   } else {
-    console.error("Element with id 'user' not found.");
-    return; // Exit the function if the element is not found
+    numRandomPc = randomNumber;
+    console.log("Computer's Random Number:", numRandomPc);
+    document.getElementById("rolling-pc").innerHTML = numRandomPc;
   }
-
-  // Generate a random number for the player
-  var numRandomUser = Math.floor(Math.random() * 6) + 1;
-  console.log(numRandomUser);
-  document.getElementById("rolling-user").innerHTML = numRandomUser;
-
-  // Generate a random number for the computer
-  var numRandomPc = Math.floor(Math.random() * 6) + 1;
-  console.log(numRandomPc);
-  document.getElementById("rolling-pc").innerHTML = numRandomPc;
-
-  // Determine the winner based on the higher score
-  var gameResult = "Congratulations... You won!";
-
-  if (numRandomUser < numRandomPc) {
-    gameResult = "Sorry... You lost!";
-  } else if (numRandomUser === numRandomPc) {
-    gameResult = "It's a draw";
-  }
-
-  // Display the game result
-  document.getElementById("result").innerHTML = gameResult;
-
-  // Add the roll-animate class to actove the dice rotation
-  diceElement.classList.add("roll-animate");
-
-  // Remove the roll-animate class after the animation ends
-  setTimeout(() => {
-    diceElement.classList.remove("roll-animate");
-  }, 1000); // Tempo della transizione
 }
